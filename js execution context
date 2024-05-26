@@ -1,0 +1,25 @@
+// what is js exec. context;
+// javascript is single threaded interpreted language, each browser has its own js engine, llike chrome- v8 engine, firefox- spidermonkey.
+// when the js engine scans the a script file, it makes an environment called js esecution context that handles the entire information and execution of code. 
+// or we  can say internal working of code how it execute.
+
+//js has three type of execcution context
+// 1. global exec. context
+// 2. functional exec. context
+// 3.  eval esecution context
+
+// global EC/  base/ default execution context-  when js engine first scan code global execution create for code outside function,and perform such task, 
+// gec create object called global for nodejs and for browser called window and passed window object  to this keyword.
+//it create memory heap  to store variable and functions.
+// gec store variable and function defination in memory with assigning them value as " undefined".
+// NOTE- gec occur only one time because js is single threaed language.
+
+//Functional Exec. context( FEC)- FEC This context is created by js engine whenever function call takes place and can be occur many time, each function call has its own exection context,
+// fec can acces whole code gec code but gec cant acces gec code.
+//
+// Eval executio context- eec occur inside of eval function in js. but not used by js developer.
+
+// CALL STACK
+//same as stack datsructure work on LIFO ORDER, exection context of code takes place.
+// in call stack/ execution stack, gec is placed by default ,and then first calling function, and so on, and when clalling function return it popped out from stack --
+// all exection , gec is poped out from call stack.
